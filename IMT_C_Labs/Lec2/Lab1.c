@@ -1,18 +1,19 @@
 /*************************************************************/
 /*************************************************************/
-/**                                                         **/
-/** File Name : IMT_Lec2_lab1                               **/
+/** File Name : IMT_C_LABS                                  **/
 /** Auther    : MOHAMED BEDIER MOHAMED                      **/
 /** Verision :  1.00                                        **/
-/**                                                         **/
 /*************************************************************/
 /*************************************************************/
 
 /* include standard input output library */
 #include <stdio.h>
+
 /* include standard bool library */
 #include <stdbool.h>
 
+
+/* this is the entry point of the program */
 int main()
 {
 	

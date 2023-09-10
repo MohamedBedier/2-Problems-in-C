@@ -1,20 +1,19 @@
 /*************************************************************/
 /*************************************************************/
-/**                                                         **/
-/** File Name : IMT_Lec2_lab3                               **/
+/** File Name : IMT_C_LABS                                  **/
 /** Auther    : MOHAMED BEDIER MOHAMED                      **/
 /** Verision :  1.00                                        **/
-/**                                                         **/
 /*************************************************************/
 /*************************************************************/
 
 /* include standard input output library */
 #include <stdio.h>
 
-
+/* this is the entry point of the program */
 int main()
 {
 	/* define Local variable */ 
+	/* the variables are declered without initialized */
 	int num ;
 
 	/*  Ask the user to enter num  */
@@ -23,6 +22,7 @@ int main()
 	/* take from the user to enter num */
 	scanf("%d",&num);
 	
+	/* check on num if is even or odd */
 	if(num % 2 == 0)
 	{
 		/* print if the num is Even or odd  */

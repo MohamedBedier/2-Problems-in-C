@@ -6,14 +6,39 @@
 /*************************************************************/
 /*************************************************************/
 
+
 /* include standard input output library */
 #include <stdio.h>
+
 
 /* this is the entry point of the program */
 int main()
 {
-	/* print full name , birth year , faculty , graduation year */
-	printf("My name is : Mohamed Bedier Mohamed Ibrahim \n");
-	printf("My birth year is : 1999\n");
-	printf("I graduated from Mansoura Uni from faculty of engineering in 2023 \n");
+	int flag = 1 , n , i;
+	printf("enter the positive interger number :");
+	scanf("%d",&n);
+	if(n == 0 || n == 1)
+	{
+		flag = 0;
+	}else 
+	{
+		
+		for(i = 2 ; i <= n/2 ; ++i)
+		{
+			if(n%i == 0)
+			{
+				flag =0;
+			break;
+			}
+		}	
+	}
+	if(flag == 1)
+	{
+		printf("%d is prime number ",n);
+	}else 
+	{
+		printf("%d is not prime number ",n);
+		
+	}
+	
 }

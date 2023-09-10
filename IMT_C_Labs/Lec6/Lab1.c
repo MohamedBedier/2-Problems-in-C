@@ -6,14 +6,24 @@
 /*************************************************************/
 /*************************************************************/
 
+
 /* include standard input output library */
 #include <stdio.h>
+
 
 /* this is the entry point of the program */
 int main()
 {
-	/* print full name , birth year , faculty , graduation year */
-	printf("My name is : Mohamed Bedier Mohamed Ibrahim \n");
-	printf("My birth year is : 1999\n");
-	printf("I graduated from Mansoura Uni from faculty of engineering in 2023 \n");
+	/* define variable with initionalization by 10 */
+	int x=10;
+	int* ptr=&x;
+	/* message for the user */
+	printf("x before change is : %d\n",x);
+	
+	/* change the value of x by pointer */
+	*ptr = 20; 
+	
+	/* message for the user */
+	printf("x after change is : %d\n",x);
+
 }

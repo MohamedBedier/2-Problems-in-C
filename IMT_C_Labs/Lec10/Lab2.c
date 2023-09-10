@@ -1,3 +1,13 @@
+/*************************************************************/
+/*************************************************************/
+/** File Name : IMT_C_LABS                                  **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/*************************************************************/
+/*************************************************************/
+
+
+/* include standard input output library */
 #include <stdio.h>
 #include <stdlib.h>
 #include "STD_TYPES.h"
@@ -19,22 +29,67 @@ Node_t* InsertBeforeANode(Node_t* Start, sint32 Data, sint32 NewData);
 Node_t* InsertAtPos(Node_t* Start, uint32 Pos, sint32 NewData);
 
 
+/* function prototypes */
+int Option_Window(void);
+
+
+
+/* this is the entry point of the program */
 int main()
 {
 	sint32 ValueToInsert;
 	uint32 NodeVal,position;
+	int option;
 	Node_t *Start = NULL;
+	while(1)
+	{
+	option=Option_Window();
+	
+	if(option == 0)
+	{
 	Start =CreateList();
-	
+	printf("\n");
+	}else if(option == 1)
+	{
 	DisplayList(Start);
-	
-	printf("\nPlease enter a position value to insert at and the value to insert: ");
-	scanf("%d%d",&position,&ValueToInsert);
-	Start= InsertAtPos(Start,position ,ValueToInsert);
-	DisplayList(Start);
+		printf("\n");
+	}else if(option == 2)
+	{
+		printf("exist system\n");
+break;
+	}else 
+	{
+		printf("wrong options\n");
+	}
+	}
 	
 	
 }
+  /* implementation of options window for the user */
+int Option_Window(void)
+{
+	 int option;
+	/* message for the user */
+	printf("........choice from this options please.......\n\n\n");
+	
+	/* option 1 */
+	printf("Press number 0 to add node \n");
+	
+	/* option 2 */
+	printf("Press number 1 to print the linked list \n");
+	
+	/* option 3 */
+	printf("Press number 2 to exit the system \n");
+	
+	printf("your option is :");
+	
+	/* take option number from user */
+	scanf("%d",&option);
+	
+	return option;
+}
+
+
 void DisplayList(Node_t* Start)
 {
 	/* check if list is empty or not */
