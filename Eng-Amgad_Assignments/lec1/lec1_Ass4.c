@@ -30,23 +30,28 @@ that provides various mathematical functions and constants */
 
 int main(void)
 {
-	float radius , Area_of_Circle , circumference_Of_Circle ;
-	/* Ask user to enter the value of radius */
-	printf("please ente the radius of circle : ");
-	/* take the value of radius */
-	scanf("%f",&radius);
+	/* define a variable to carry radius of a circle from user */
+	float Local_Radius;
+	/* define Two variables to carry Area Of Circle and Circumference Of Circle */
+	float Local_AreaOfCircle;
+	float Local_CircumferenceOfCircle;
 	
-	/* calculates the area of circle */
-	/* Note that we use the function of 
-       pow(x, y)to Return x raised to the power of y.
+	
+	/* ask the user to enter radius of a circle */
+	printf("please,Enter radius Of Circle : ");
+	scanf("%f",&Local_Radius);
+	
+	/* calculates the area of circle from this equation */
+	/* Note that we use the function of pow(x, y)to Return x raised to the power of y.
 		and we use const M_PI  */	
-	Area_of_Circle = M_PI * pow(radius , 2) ;
-	
-	/* print Area_of_Circle */
-	printf("Area_of_Circle is : %0.4f \n",Area_of_Circle);
-	/* calculates the circumference of circle  */
-	circumference_Of_Circle = 2.0 *M_PI *radius ;
-	/* print circumference_Of_Circle */
-	printf("circumference_Of_Circle is : %0.4f \n",circumference_Of_Circle);
+		Local_AreaOfCircle =  M_PI * (float)pow(Local_Radius ,2);
+		
+		/* calculate the Circumference Of Circle from this equation */
+		Local_CircumferenceOfCircle = 2.0 * M_PI * Local_Radius;
+		
+	/* print the Area Of Circle */
+	printf("Area Of Circle is : %0.4f\n",Local_AreaOfCircle);
+	/* print the Circumference Of Circle */
+	printf("Circumference Of Circle is : %0.4f\n",Local_CircumferenceOfCircle);
 	
 }

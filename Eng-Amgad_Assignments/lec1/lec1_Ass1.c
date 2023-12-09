@@ -33,21 +33,29 @@
 
 int main(void)
 {
-	/* define two integers   */
-	int num1 , num2 , Result = 0 ;
+	/* define two variables to carry two integers from user */
+	int Local_Num_1;
+	int Local_Num_2;
 	
-	/* Ask user to enter the value of num1 */
-	printf("please enter the value of num1 : ");
-	/* take the value num1 from user */
-	scanf("%d",&num1);
-	/* Ask user to enter the value of num2  */
-	printf("please enter the value of num2 : ");
-	/* take the value num2 from user */
-	scanf("%d",&num2);
-	/* the results of this equation: */
-	Result = (((num1 + num2) * 3) - 10 );
-	/* to print the value of Result on the screen */
-	printf("the Result of the equation is : %d \n",Result);
+	/*define a variable to carry result */
+	int Local_Result = 0;
+	
+	/* ask the user to enter Two integer */
+	printf("please,Enter two integers : \n");
+	
+	/* take the first integer value from the user */
+	printf("Integer 1 : ");
+	scanf("%d",&Local_Num_1);
+	
+	/* take the 2nd integer value from the user */
+	printf("Integer 2 : ");
+	scanf("%d",&Local_Num_2);
+	
+	/* calculate the result of the equation */
+	Local_Result = (( Local_Num_1 + Local_Num_2 ) * 3 ) - 10;
+	
+	/* print the results of this equation */
+	printf("the results of this equation is : %d",Local_Result);
 	
 
 	

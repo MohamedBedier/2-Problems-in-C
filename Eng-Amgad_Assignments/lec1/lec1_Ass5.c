@@ -9,8 +9,6 @@
 /*************************************************************/
 
 
-
-
 /* 
    import standard library built in tool chain 
    to deal with operating system ====> to print 
@@ -26,36 +24,42 @@
 
 int main(void)
 {
-   /* define  integers   */
-	int num1 , num2 , sum = 0 , sub = 0 , anding = 0 ,oring = 0,Xoring = 0 ;
+  	/* define two variables to carry two integers from user */
+	int Local_Num_1;
+	int Local_Num_2;
 	
-	/* Ask user to enter the value of num1 */
-	printf("please enter the value of num1 : ");
-	/* take the value num1 from user */
-	scanf("%d",&num1);
-	/* Ask user to enter the value of num2  */
-	printf("please enter the value of num2 : ");
-	/* take the value num2 from user */
-	scanf("%d",&num2);
+	/* define variables to carry summation, subtraction, anding, oring, and Xoring */
+	int Local_sum = 0;
+	int Local_sub = 0;
+    int	Local_anding = 0;
+	int Local_oring = 0;
+	int Local_Xoring = 0;
+	
+	/* Ask user to enter the value of 1st integer */
+	printf("please enter the value of 1st integer : ");
+	/* take the value 1st integer from user */
+	scanf("%d",&Local_Num_1);
+	/* Ask user to enter the value of 2nd integer  */
+	printf("please enter the value of 2nd integer : ");
+	/* take the value 2nd integer from user */
+	scanf("%d",&Local_Num_2);
 	
 	
 	/* print summation */
-	sum = num1 + num2 ;
-	printf("sum is %d \n", sum);
+	Local_sum = Local_Num_1 + Local_Num_2 ;
+	printf("sum is %d \n", Local_sum);
  	/* print subtraction */
-	sub = num1 - num2 ;
-	printf("sub is %d \n", sub);
+	Local_sub = Local_Num_1 - Local_Num_2 ;
+	printf("sub is %d \n", Local_sub);
 	/* print anding */
-	anding = num1 & num2 ;
-	printf("anding is %d \n", anding);
+	Local_anding = Local_Num_1 & Local_Num_2 ;
+	printf("anding is %d \n", Local_anding);
 	/* print oring */ 
-	oring = num1 | num2 ;
-	printf("oring is %d \n", oring);
+	Local_oring = Local_Num_1 | Local_Num_2 ;
+	printf("oring is %d \n", Local_oring);
 	/* print Xoring */
-	Xoring = num1 ^ num2 ;
-	printf("Xoring is %d \n", Xoring);
-	
-	
+	Local_Xoring = Local_Num_1 ^ Local_Num_2 ;
+	printf("Xoring is %d \n", Local_Xoring);
 	
 }
 	

@@ -137,7 +137,7 @@ Node_t* InsertAtBeginning(Node_t* Start, sint32 Data)
 	/*Update the reference to the list*/
 	Start = temp;
 	
-		return Start;
+	return Start;
 }
 
 void InsertAtEnd(Node_t* Start, sint32 Data)

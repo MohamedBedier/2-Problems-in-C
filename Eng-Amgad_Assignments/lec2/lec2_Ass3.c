@@ -8,9 +8,6 @@
 /*************************************************************/
 /*************************************************************/
 
-
-
-
 /* 
    import standard library built in tool chain 
    to deal with operating system ====> to print 
@@ -26,27 +23,38 @@
 
 int main(void)
 {
-	/* define two integers   */
-	int Number , Digit ,i , result_one , result_two ;
+	/* define an integer to carry Number */
+	int Local_Number;
+	/* define integers to carry Digit,result_one */
+	int Local_Digit=0;
+	int Local_result_one=0;
 	
-	/* Ask user to enter the value of num1 */
-	printf("please enter the value of Number : ");
-	/* take the value num1 from user */
-	scanf("%d",&Number);
-	while(Number != 0)
+	/* Ask user to enter the value of Number */
+	printf("please enter a Number : ");
+	/* take the value Number from user */
+	scanf("%d",&Local_Number);
+	/* check on the number if it is from three digits or not */
+	if((Local_Number>=0) && (Local_Number <=999))
 	{
-	    Digit = Number % 10  ;
-		result_one = result_one * 10 + Digit;
-		Number /= 10 ;
-	}
+		/* separates the number into its individual digits */
+		while(Local_Number != 0)
+		{
+			Local_Digit = Local_Number % 10 ;
+			Local_result_one = Local_result_one * 10 + Local_Digit;
+			Local_Number /= 10 ;
+		}
+		/* prints the digits separated from one another by three spaces each */
+		while(Local_result_one != 0)
+		{
+			Local_Digit = Local_result_one % 10  ;
+			printf("%d\t",Local_Digit);
+			Local_result_one /= 10 ;
+		}
 	
-		while(result_one != 0)
+	}else
 	{
-	    Digit = result_one % 10  ;
-		printf("%d\t",Digit);
-		result_one /= 10 ;
+		/* message for user */
+		printf("you entered a number contants of four digits");
 	}
-	
-	
 	
 }

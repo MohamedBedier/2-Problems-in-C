@@ -18,16 +18,13 @@
 /*Standard input _output library */
 #include<stdio.h>
 
-
-
 /* this is the main function (the program start from here)*/
-
 /* Every program must have only one main function  */
 
 int main(void)
 {
-	
-	printf("My Name is Mohamed Bedier Mohamed \nMy grade is 3.62 \n");
+	/*  Write a program that print your name and your grade in a new line */
+	printf("My Name is Mohamed Bedier Mohamed \nMy GPA grade is (3.62/4)  \n");
 
 
 }	

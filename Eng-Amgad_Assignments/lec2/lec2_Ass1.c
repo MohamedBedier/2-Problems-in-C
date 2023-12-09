@@ -8,9 +8,6 @@
 /*************************************************************/
 /*************************************************************/
 
-
-
-
 /* 
    import standard library built in tool chain 
    to deal with operating system ====> to print 
@@ -26,18 +23,18 @@
 
 int main(void)
 {
-	/* define varible   */
-	char Character ;
+  	/* define a variables to carry character from user */
+	char Local_Character;
 	
-	/* Ask user to enter character */
-	printf("please enter the character : ");
+	/* Ask user to enter a character */
+	printf("please enter a character : ");
+	
 	/* take the character from user */
-	/* Note that we use a space before %c */
-	scanf(" %c",&Character);
+	scanf("%c",&Local_Character);
 	
 
 	/* to print Ascii number of the character */
-	printf("the value of Result is : %d \n",Character);
+	printf("the value of this character in Ascii table is : %d",Local_Character);
 	
 	
 	

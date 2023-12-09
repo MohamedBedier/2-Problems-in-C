@@ -8,8 +8,6 @@
 /*************************************************************/
 /*************************************************************/
 
-
-
 /* 
    import standard library built in tool chain 
    to deal with operating system ====> to print 
@@ -25,19 +23,21 @@
 
 int main(void)
 {
-	/* define two variables */
-	float temp_c ;
-	float Resylt_Temp_F = 0 ;
+	/* define a variable to carry Celsius degree from user */
+	float Local_CelsiusDegree;
+	/* define a variable to carry Fahrenheit Degree */
+	float Local_FahrenheitDegree = 0;
 	
-	/* Ask user to enter the value of temp_c */
-	printf("please enter the value of temp_c : ");
-	/* take the value temp_c from user */
-	scanf("%f",&temp_c);
+	/* ask the user to enter Celsius degree */
+	printf("please,Enter Celsius degree : ");
+	scanf("%0.1f",&Local_CelsiusDegree);
+	
 	/* converting temperature from degrees Celsius to degrees Fahrenheit */
 	/* we use explict casting */
-	Resylt_Temp_F =temp_c * ((float)9/(float)5) + (float)32 ;
-	/* print Resylt_Temp_F */
-	printf("Resylt_Temp_F is %0.4f",Resylt_Temp_F);
+		Local_FahrenheitDegree =  Local_CelsiusDegree * ((float)9/(float)5) + (float)32;
+	
+	/* print the Fahrenheit Degree */
+	printf("Fahrenheit Degree is : %0.2f",Local_FahrenheitDegree);
 	
 }
 	

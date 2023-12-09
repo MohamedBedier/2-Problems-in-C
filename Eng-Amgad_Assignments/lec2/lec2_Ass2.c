@@ -26,28 +26,29 @@
 
 int main(void)
 {
-	/* define varibles */
-	int Number , bit_number , TGL ;
+	/* define a varible to carry an integer Number */
+	int Local_Number;
+	/* define a varible to carry an bit_number */
+	int	Local_bit_number; 
+	/* define a varible to carry GetBit(the value of this bit in this number ) */
+	int	Local_GetBit ;
 	
-	/* Ask user to enter number */
-	printf("PLease Enter number : \n");
+	/* Ask user to enter a number */
+	printf("PLease Enter a number : \n");
 	
 	/* take number from user   */
-	scanf("%d",&Number);
+	scanf("%d",&Local_Number);
 	
 	/* Ask user to enter bit_number */
 	printf("PLease Enter bit_number : \n");
 	
 	/* take number  */
-	scanf("%d",&bit_number);
+	scanf("%d",&Local_bit_number);
 	
-	 /* Equation :	*/
-		TGL = ((Number >> bit_number) & 1); 
+	 /* Equation to get the value of this bit in this number :	*/
+	 /* GET_BIT Function */
+	Local_GetBit = ((Local_Number >> Local_bit_number) & 1); 
 	
 	/*print the set value   */
-	printf("the value after make Set_Bit : %d \n", TGL);
-	
-	
-	
-	
+	printf("the value of this bit in this number : %d \n", Local_GetBit);
 }
