@@ -1,13 +1,19 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 4                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
-
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec4_Ass1    
+ * @version : 1.00  
+ * @brief   : Write a program to display inverted half pyramid using
+ *  		  stars pattern.
+ *             * * * * *
+ *             * * * *
+ *             * * *
+ *             * *
+ *             *
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                                                                       
+ ************************************************************
+ ************************************************************/
 
 
 /* 
@@ -27,17 +33,25 @@
 int main(void)
 {
 	/* define two integers   */
-	int I , J ;
+	int Local_count_I , Local_count_J ;
 	
 	
 	/*  we use nested for */
-	for(I = 0 ; I < 6 ; I++)
+	for(Local_count_I = 0 ; Local_count_I < 5 ; Local_count_I++)/* for rows */
 	{
-		for(J =0 ; J <= 5 - I  ; J++)
+		for(Local_count_J =0 ; Local_count_J <  5 - Local_count_I  ; Local_count_J++)/* for column */
 		{
 			printf("* ");
 		}
-		printf("\n");
+		
+		/* to avoid new line after the implementation of the loops */
+		if(Local_count_I != 4)
+		{
+			printf("\n");
+		}else
+		{
+			;
+		}
 	}
 	
 	

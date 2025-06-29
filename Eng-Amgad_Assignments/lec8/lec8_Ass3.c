@@ -1,12 +1,14 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 8                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec8_Ass3    
+ * @version : 1.00  
+ * @brief   : Write a C function to swap the contents of two arrays with
+ *            the same length.
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                                                                       
+ ************************************************************
+ ************************************************************/
 
 
 /* protype of function */
@@ -33,13 +35,13 @@ int main(void)
 	int arr_two[5] = {6,7,8,9,10};
 	/* define two integer varibles */
 	int count_I ,count_J  ;
-	/* print arr_one after swap  */
+	/* print arr_one before swap  */
 		for(count_I =0 ; count_I<5 ; count_I++)
 		{
 			printf("arr_one before swap is : %d \n",arr_one[count_I]);
 		}
 		printf("********************\n");
-		/* print arr_two after swap  */
+		/* print arr_two before swap  */
 		for(count_J =0 ; count_J<5 ; count_J++)
 		{
 			printf("arr_two before swap is : %d \n",arr_two[count_J]);

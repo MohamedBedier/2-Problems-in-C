@@ -1,16 +1,16 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 7                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec7_Ass2    
+ * @version : 1.00  
+ * @brief   : Write a program that computes the nth term of the
+ *            arithmetic series: 1, 3, 5, 7, 9, …
+ *            Run the program to compute the 100th term of the given series
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                                                                       
+ ************************************************************
+ ************************************************************/
 
-
-/* protype of function */
-void Count_ones(int Number);
 
 /* 
    import standard library built in tool chain 

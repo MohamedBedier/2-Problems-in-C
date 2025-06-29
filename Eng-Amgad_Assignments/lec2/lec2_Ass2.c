@@ -1,15 +1,14 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 2                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
-
-
-
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec2_Ass2    
+ * @version : 1.00  
+ * @brief   : Read_Bit
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                  
+ *                                                       
+ ************************************************************
+ ************************************************************/
 
 /* 
    import standard library built in tool chain 
@@ -17,12 +16,12 @@
    on screen or take any thing from user    
  */
 
-/*Standard input _output library */
+/* Standard input _output library */
 #include<stdio.h>
 
 
-/* this is the main function (the program start from here) */
-/* Every program must have only one main function  */
+/* this is the entry point of the program (the program start from here) 
+    Every program must have only one main function  */
 
 int main(void)
 {
@@ -34,21 +33,21 @@ int main(void)
 	int	Local_GetBit ;
 	
 	/* Ask user to enter a number */
-	printf("PLease Enter a number : \n");
+	printf("PLease Enter a number : ");
 	
 	/* take number from user   */
 	scanf("%d",&Local_Number);
 	
 	/* Ask user to enter bit_number */
-	printf("PLease Enter bit_number : \n");
+	printf("PLease Enter bit_number : ");
 	
-	/* take number  */
+	/* take Bit number from the user  */
 	scanf("%d",&Local_bit_number);
 	
 	 /* Equation to get the value of this bit in this number :	*/
 	 /* GET_BIT Function */
 	Local_GetBit = ((Local_Number >> Local_bit_number) & 1); 
 	
-	/*print the set value   */
-	printf("the value of this bit in this number : %d \n", Local_GetBit);
+	/* print the value of this bit in this number */
+	printf("the value of this bit in this number : %d ", Local_GetBit);
 }

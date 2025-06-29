@@ -1,16 +1,18 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 5                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec5_Ass1    
+ * @version : 1.00  
+ * @brief   : Write a C Function that prints the cube of any number
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                                                                       
+ ************************************************************
+ ************************************************************/
+
 
 
 /* prototype of function  */
-void cubeFunction(int number);
+void GetCube_func(int CopyNum);
 
 
 /* 
@@ -28,16 +30,27 @@ void cubeFunction(int number);
 
 int main(void)
 {
-	cubeFunction(5);
-	cubeFunction(2);
+	/* define a variable to carry the number which wanted to get cube num of it */
+	int LocaL_Num;
+	/* ask the user to enter the number */
+	printf("plz enter the num : ");
+	/* take the number from the user */
+	scanf("%d",&LocaL_Num);
+
+	/* call the cubeFunction */
+	GetCube_func(LocaL_Num);
 	
 }
 
-void cubeFunction(int number)
+
+void GetCube_func(int CopyNum)
 {
-	/* define variable */
-	int result;
-	/* equation */
-	result = number * number * number;
-	printf("cube of the number is %d\n",result);
+	/* define variable to carry the result of cube num */
+	int LocalCubeOfNum =0 ;
+	
+	/* get the cube of a num */
+	LocalCubeOfNum = CopyNum * CopyNum *CopyNum;
+	/* print the cube of the number */
+	printf("The Cube of Number %d is %d ",CopyNum,LocalCubeOfNum);
+	
 }

@@ -1,16 +1,18 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 6                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec6_Ass1    
+ * @version : 1.00  
+ * @brief   : Write a C Function to count the number of ones in the binary
+ *            representation of a 32-bit integer
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                                                                       
+ ************************************************************
+ ************************************************************/
 
 
 /* protype of function */
-void Count_ones(int Number);
+void Count_ones(int CopyNumber);
 
 /* 
    import standard library built in tool chain 
@@ -27,39 +29,40 @@ void Count_ones(int Number);
 
 int main(void)
 {
-	/* define two integers   */
-	int Number ;
+	/* define an integer number  */
+	int Local_Number ;
 	
 	/* Ask user to enter the Number */
 	printf("please enter the Number : ");
 	/* take the Number from user */
-	scanf("%d",&Number);
+	scanf("%d",&Local_Number);
 	/* call by value */
-	Count_ones(Number);
+	Count_ones(Local_Number);
 }
 	
-void Count_ones(int Number)
+void Count_ones(int CopyNumber)
 {
 	/* define variables */
-	int i , counter= 0;
-	for(i=0 ; i <32 ; i++)
+	int Local_Count_I , Local_Count_Ones= 0,Local_Get_Bit=0;
+	
+	
+	for(Local_Count_I=0 ; Local_Count_I <32 ; Local_Count_I++)
 	{
+		Local_Get_Bit = ((CopyNumber >> Local_Count_I) & 1);
 		/* check if bit has one or zero */
-		if((Number & 1) == 1) 					
+		if(Local_Get_Bit == 1) 					
 		{
 			/* counter increase one if has one */
-			counter++;
-			/* shift left by 1 bit to check the next bit */
-			Number = Number >> 1;
+			Local_Count_Ones++;
+			
 		}else
 		{
-			/* shift left by 1 bit to check the next bit */
-			Number = Number >> 1;
+				;
 		}
 		
 		
 	}
 	/* print counter */
-	printf(" the number of ones in the binary representation is %d",counter);
+	printf(" the number of ones in the binary representation is %d",Local_Count_Ones);
 	
 }

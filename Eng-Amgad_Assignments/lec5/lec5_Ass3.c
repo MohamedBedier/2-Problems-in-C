@@ -1,18 +1,20 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 5                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec5_Ass3    
+ * @version : 1.00  
+ * @brief   : write a C Function that display Prime Numbers between
+ *            Intervals (two numbers).
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                                                                       
+ ************************************************************
+ ************************************************************/
 
 
 
 /* prototype of function */
-void Prime_function (int num1 ,int num2);
-int isPrime(int num);
+void GetPrimeBtwTwoNum(int CopyNum1,int CopyNum2);
+void IsPrime(int CopyNum1);
 
 /* 
    import standard library built in tool chain 
@@ -30,51 +32,54 @@ int isPrime(int num);
 
 int main()
 {
-	int num1 , num2; 
+	/* define integers to carry numbers */
+	int Local_num1 , Local_num2; 
 	/* Ask user to enter num1 */
 	printf("please enter num1 : ");
 	/* take num1 from user */
-	scanf("%d",&num1);
+	scanf("%d",&Local_num1);
 	/* Ask user to enter num1 */
 	printf("please enter num2 : ");
 	/* take num1 from user */
-	scanf("%d",&num2);
+	scanf("%d",&Local_num2);
 	/* pass Arguments By value */
-	Prime_function(num1 , num2);
+	GetPrimeBtwTwoNum(Local_num1 , Local_num2);
 	
 	
 	
 	
 }
-int isPrime(int num)
- {
-    if (num <= 1) {
-        return 0;  // Not prime if number is less than or equal to 1
-    }
-
-    for (int i = 2; i * i <= num; i++) {
-        if (num % i == 0) {
-            return 0;  // Not prime if it has a divisor other than 1 and itself
-        }
-    }
-
-    return 1;  // Prime number
-}
-
-
-void Prime_function (int num1 ,int num2)
+void IsPrime(int CopyNum1)
 {
-	/* define varibles */ 
-	int counter_I , counter_J , counter_k , counter_L;
-	
-	for(counter_k = num1 ; counter_k <= num2 ; counter_k++)
+	/* define two counters */
+	int Local_Counter_I ,Local_Counter_J=1;
+	/* loop to divid number on all previous number and itself */
+	for(Local_Counter_I = 2 ; Local_Counter_I <= CopyNum1 ; Local_Counter_I++)
 	{
-		if (isPrime (counter_k))
+		/* check of only accept divided on itself or not */
+		if(CopyNum1 % Local_Counter_I == 0)
 		{
-			printf("%d is prime number\n",counter_k);
-			
+			/* update counter by 1 */
+			Local_Counter_J++;
 		}
 	}
 	
-}
+	/* check of prime or not */
+	if(Local_Counter_J == 2 )
+	{
+		printf("%d \n",CopyNum1);
+	}
 	
+}
+
+
+void GetPrimeBtwTwoNum(int CopyNum1,int CopyNum2)
+{
+	int LocaL_Count_I;
+	for(LocaL_Count_I =CopyNum1 ; LocaL_Count_I <= CopyNum2 ;LocaL_Count_I++)
+	{
+		IsPrime(LocaL_Count_I);
+		
+	}
+	
+}

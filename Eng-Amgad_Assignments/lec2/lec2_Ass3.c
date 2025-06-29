@@ -1,12 +1,14 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 3                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec2_Ass3    
+ * @version : 1.00  
+ * @brief   : print the result of two numbers following the equation 
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                  
+ *                                                       
+ ************************************************************
+ ************************************************************/
 
 /* 
    import standard library built in tool chain 
@@ -14,12 +16,12 @@
    on screen or take any thing from user    
  */
 
-/*Standard input _output library */
+/* Standard input _output library */
 #include<stdio.h>
 
 
-/* this is the main function (the program start from here) */
-/* Every program must have only one main function  */
+/* this is the entry point of the program (the program start from here) 
+    Every program must have only one main function  */
 
 int main(void)
 {

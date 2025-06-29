@@ -1,17 +1,14 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 1                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
-
-
-
-
-
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec3_Ass1    
+ * @version : 1.00  
+ * @brief   : Write a program that takes one character and checks
+ *			  if it alphabet or not.
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                                                                       
+ ************************************************************
+ ************************************************************/
 
 /* 
    import standard library built in tool chain 
@@ -28,25 +25,27 @@
 
 int main(void)
 {
-	/* define character and integer   */
-	char Character;
-	int Decimal_value;
+	/* define a variable to carry to a character from user */
+	char Local_Character;
+	/*define a variable to carry to the decimal value of the character from ascii table */
+	int Local_Decimal_value;
 	
 	/* Ask user to enter the Character */
 	printf("please enter the Character : ");
 	/* take the value Character from user */
-	scanf(" %c",&Character);
-	Decimal_value = Character ;
-	if(((Decimal_value >= 65) && (Decimal_value <= 90 )) )
+	scanf("%c",&Local_Character);
+	
+	/* assign the decimal value of the character */
+	Local_Decimal_value = Local_Character;
+	
+	/* checks if it alphabet or not */
+	if(((Local_Decimal_value >= 65) && (Local_Decimal_value <= 90 )) )
 	{
 		printf("character is Alphabit\n");
-	}else if (((Decimal_value >= 97) && (Decimal_value <= 122 )))
+	}else if (((Local_Decimal_value >= 97) && (Local_Decimal_value <= 122 )))
 	{
-	printf("character is Alphabit\n");	
+		printf("character is Alphabit\n");	
 	}else {
 		printf("character not Alphabit\n");
 	}
-	
-	
-	
 }

@@ -1,16 +1,22 @@
-/*************************************************************/
-/*************************************************************/
-/**                                                         **/
-/** File Name : Assignment 7                                **/
-/** Auther    : MOHAMED BEDIER MOHAMED                      **/
-/** Verision :  1.00                                        **/
-/**                                                         **/
-/*************************************************************/
-/*************************************************************/
+/*************************************************************
+ *************************************************************
+ *                                                         
+ * @file    : Lec7_Ass1    
+ * @version : 1.00  
+ * @brief   : The sequence of numbers 1, 1, 2, 3, 5, 8, 13, … is called
+ *            Fibonacci numbers, each is the sum of the preceding 2.
+ *            Write a program which given n, returns the nth Fibonacci
+ *            number.
+ *            - with for/while
+ * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
+ *                                                                                                       
+ ************************************************************
+ ************************************************************/
 
 
 /* protype of function */
-int F_Fibonacci(int n);
+void FibonacciFuncByForLoop(int array[],int size);
+void FibonacciFuncByWhileLoop(int array[],int size);
 
 /* 
    import standard library built in tool chain 
@@ -27,32 +33,70 @@ int F_Fibonacci(int n);
 
 int main(void)
 {
-	/* define integers varibles  */
-	int n , result , counter;
+	/*define the array size */
+	int size;
 	
-	/* Ask the user to enter the First_Number */
-	printf("please,enter the First_Number: ");
-	/* take the First_Number from user */
-	scanf("%d",&n);
-	for(counter = 0 ; counter <  n ; counter++)
-	{
-		/* calling function */
-		result =  F_Fibonacci(counter);
-		printf("%d ",result);
-	}
+	printf("please enter the n element : ");
+	
+	scanf("%d",&size);
+	/* define an integer array */
+	int array[size];
+	
+	//FibonacciFuncByForLoop(array,size);
+	FibonacciFuncByWhileLoop(array,size);
 }
 
-int F_Fibonacci(int n)
+
+void FibonacciFuncByForLoop(int array[],int size)
 {
-	int sum = 1 ;
-	
-	if(n == 0 || n == 1)
+	/* define interger variables */
+	int Local_nth_Num,Local_Count_I;
+
+	/* this loop the create Fibonacci series */
+	for(Local_Count_I = 0 ; Local_Count_I < size ; Local_Count_I++)
 	{
-		return sum = 1 ;
-	}else 
-	{
-	  sum = F_Fibonacci(n-1) + F_Fibonacci(n-2);
-		return sum;
+		
+		if(Local_Count_I == 0)
+		{
+			array[Local_Count_I] = 1;/* first element */
+		}else if(Local_Count_I == 1)
+		{
+			array[Local_Count_I] = 1;/* 2nd element */
+		}else if(Local_Count_I > 1)
+		{
+			array[Local_Count_I] = array[Local_Count_I -1] + array[Local_Count_I-2]; /* the other elements in series */
+		}
 	}
-	
+	Local_nth_Num = array[size -1];/* get the nth element */
+	printf("the n th number is : %d",Local_nth_Num);/* print the nth element */
+
+}
+
+
+void FibonacciFuncByWhileLoop(int array[],int size)
+{
+	/* define interger variables */
+	int Local_nth_Num,Local_Count_I=0;
+
+	/* this loop the create Fibonacci series */
+	while( Local_Count_I < size )
+	{
+		
+		if(Local_Count_I == 0)
+		{
+			array[Local_Count_I] = 1;/* first element */
+			Local_Count_I++;
+		}else if(Local_Count_I == 1)
+		{
+			array[Local_Count_I] = 1;/* 2nd element */
+			Local_Count_I++;
+		}else if(Local_Count_I > 1)
+		{
+			array[Local_Count_I] = array[Local_Count_I -1] + array[Local_Count_I-2]; /* the other elements in series */
+		Local_Count_I++;
+		}
+	}
+	Local_nth_Num = array[size -1];/* get the nth element */
+	printf("the n th number is : %d",Local_nth_Num);/* print the nth element */
+
 }
