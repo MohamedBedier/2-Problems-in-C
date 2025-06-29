@@ -15,9 +15,11 @@
    on screen or take any thing from user    
  */
 
+/*Standard input _output library */
 #include<stdio.h>
 
-/*Standard input _output library */
+/* this is the main function */
+/* Every program must have only one main function  */
 
 int main(void)
 {
@@ -25,11 +27,12 @@ int main(void)
 	int x = 1052168 ;
 	float y = 1268.369 ;
 	char z = 65 ;
-	/* Ask user to enter the value of x */
+	/* Ask user to print the value of x */
 	printf("the value of x = %d\n",x);
-	/* Ask user to enter the value of y */
+	
+	/* Ask user to print the value of y */
 	printf("the value of y = %f\n",y);
 	
-	/* to print Ascii character  */
+	/* Ask user to print Ascii character  */
 	printf("the value of z = %c\n",z);
 }

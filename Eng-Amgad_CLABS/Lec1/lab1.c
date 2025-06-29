@@ -8,36 +8,19 @@
 /*************************************************************/
 /*************************************************************/
 
-
-
-/* 
-   import standard library built in tool chain 
-   to take with operating system ====> to print 
-   on screen or take any thing from user    
- */
+/*Standard input _output library */
 
 #include<stdio.h>
 
-/*Standard input _output library */
+
 
 /* this is the main function */
 /* Every program must have only one main function  */
 
 int main(void)
 {
-	/* this function used to print on screen */
-	
-	printf("MOHAMED BEDIER MOHAMED \n");
-	
-	printf("MOHAMED \"BEDIER\" MOHAMED \n");
-	
-	printf("MOHAMED \'BEDIER\' MOHAMED \n");
-	
-	printf("MOHAMED\tBEDIER\tMOHAMED \n");
-	
-	printf("MOHAMED\nBEDIER\nMOHAMED \n");
-	
-	printf("MOHAMED \\BEDIER \\ MOHAMED \n");
+
+	printf("\n%d",printf("%s","hello!!"));
 	
 	/* return type */
 	return 0 ;

@@ -20,25 +20,29 @@
 
 int main(void)
 {
-	int Number , bit_number , TGL_Number ;
+	/* define two variables to carry number and bit_num */
+	int Number , bit_number ;
+	
+	/* define a varible to carry the result of toggling */
+	int TGL_Number ;
 	
 	/* Ask user to enter number */
-	printf("PLease Enter number : \n");
+	printf("PLease Enter number : ");
 	
-	/* take number  */
+	//* take the number from the user */
 	scanf("%d",&Number);
 	
 	/* Ask user to enter bit_number */
-	printf("PLease Enter bit_number : \n");
+	printf("PLease Enter bit_number : ");
 	
-	/* take number  */
+	/* take the Bit_Num from the user */
 	scanf("%d",&bit_number);
 	
 	 /* Equation :	*/
-		TGL_Number = (Number >> bit_number) & 1; 
+		TGL_Number = Number ^( 1 << bit_number); 
 	
-	/*print the set value   */
-	printf("the value after make Set_Bit : %d \n", TGL_Number);
+	/*print the toggle value   */
+	printf("the value after make TGL_Bit : %d \n", TGL_Number);
 	
 
 	

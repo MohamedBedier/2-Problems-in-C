@@ -27,6 +27,8 @@
 int main(void)
 {
  
+ /* define a varible to carry number */
+ 
  int Number;
  
  /* Ask user to enter number :  */
@@ -34,43 +36,14 @@ int main(void)
 	
 	/* take The Number from user */
 	scanf("%d",&Number);
+	
 	/* check condition */
-	if ( Number & (Number-1)==0 )
+	if ( (Number & (Number-1)) == 0 )
 	{
 		printf("NUMNER %d is power by 2 \n",Number);
 	}
-else {
+	else {
 	printf("NUMNER %d is not power by 2 \n",Number);
 	}
 }
 
-/**************************/
-/**  another solution    **/
-/**************************/
-
-/*
-
-
-int main(void)
-{
- 
- int Number , x ;
- 
- /* Ask user to enter number :  */
-	//printf("please enter Number : ");
-	
-	/* take The Number from user */
-	//scanf("%d",&Number);
-	/* check condition */
-	//x = Number & (Number--) ;
-	/*if ( x == 0 )
-	{
-		printf("NUMNER %d is power by 2 \n",++Number);
-	}
-else {
-	printf("NUMNER %d is not power by 2 \n",++Number);
-	}
-}
-
-
-*/

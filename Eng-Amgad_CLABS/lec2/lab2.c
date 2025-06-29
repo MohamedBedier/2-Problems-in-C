@@ -21,32 +21,27 @@
 
 int main(void)
 {
+	/* define two variables to carry number and bit_num */
 	int Number , bit_number ;
 	
 	/* Ask user to enter number */
-	printf("PLease Enter number : \n");
+	printf("PLease Enter number : ");
 	
-	/* take number  */
+	//* take the number from the user */
 	scanf("%d",&Number);
 	
 	/* Ask user to enter bit_number */
-	printf("PLease Enter bit_number : \n");
+	printf("PLease Enter bit_number : ");
 	
-	/* take number  */
+	/* take the Bit_Num from the user */
 	scanf("%d",&bit_number);
 	
 	 /* Equation :	*/
-		Number |= ( bit_number  << 1 );
+		Number |= ( 1  << bit_number );
 	
-	/*print the set value   */
+	/*print the set value */
 	printf("the value after make Set_Bit : %d \n", Number);
 	
 
 	
 }
-
-
-/*   
-	in some tool chain print true ====> 255
-
-*/

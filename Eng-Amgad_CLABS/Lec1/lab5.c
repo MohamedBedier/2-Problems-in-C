@@ -14,10 +14,15 @@
    to take with operating system ====> to print 
    on screen or take any thing from user    
  */
+ 
+ 
+/*Standard input _output library */
 
 #include<stdio.h>
 
-/*Standard input _output library */
+
+/* this is the main function */
+/* Every program must have only one main function  */
 
 int main(void)
 {
