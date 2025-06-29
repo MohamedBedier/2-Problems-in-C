@@ -1,13 +1,12 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec4_Ass3   
- * @version : 1.00  
- * @brief   :  Write a program to display English alphabets from A to Z
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 4                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
 
 
 
@@ -29,15 +28,15 @@
 int main(void)
 {
 	/* define counter   */
-	 char Local_counter ;
+	 char counter ;
 	
-	/* Message for the user */
-	printf("English alphabets :\n");
 	
 	 /* from ascii table */
-	for(Local_counter = 65 ; Local_counter <= 90; Local_counter++)
+	 
+	for(counter = 65 ; counter <= 90; counter++)
+		
 		{
-			printf("%c\t",Local_counter);
+			printf("%c\n",counter);
 		}
 	
 	

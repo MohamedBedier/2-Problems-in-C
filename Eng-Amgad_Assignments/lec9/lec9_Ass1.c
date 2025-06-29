@@ -1,14 +1,12 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec9_Ass1    
- * @version : 1.00  
- * @brief   : Write a function which, given a string, return TRUE if all
- *            characters are distinct and FALSE if any character is repeated.
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 9                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
 
 
 /* protype of function */
@@ -33,7 +31,7 @@ int main(void)
 {
 	
 	/* define an array of character  */
-	char arr[] = "Mohamed";	/* flase M Is capital and m is small */
+	char arr[] = "mohamed";	
 	/* calculate size of array */
 	int size = sizeof(arr)/sizeof(arr[0]);
 	/* calling func */
@@ -52,26 +50,23 @@ int main(void)
 void func(char arr[] , int size)
 {
 	   /* define integers */  
-	int counter_I=0 ,counter_J=0 ,counter_k=0 ;
+	int counter_I=0 ,counter_J=0 ;
 	/* loop untill passing on all element of array */
-	for(counter_I = 0 ; counter_I <= size -1 ; counter_I++)
+	for(counter_I = 0 ; counter_I < size ; counter_I++)
 	{
-		for(counter_k = counter_I +1 ; counter_k <= size -1 ; counter_k++)
-	     {
 			/* ckeck on if element one in arr repeated or not  */
-		   if(arr[counter_I] == arr[counter_k] )
-		    {
+		if(arr[0] == arr[counter_I+1] )
+		{
 			/* repeated counter increment by 1 */
 				counter_J++;
-		    }
-	      }
+		}
 	}
-	  /* check on counter_J if incremented ,repeated & return TRUE */
-	if(counter_J > 0)
+	  /* check on counter_J if incremented by 1  repeated & return TRUE */
+	if(counter_J == 1)
 	{
 		printf("TRUE\n");
 	}else{
-		/* check on counter_J if not incremented not repeated & return FALSE */
+		/* check on counter_J if not incremented by 1  not repeated & return FALSE */
 		printf("FALSE\n");
 	}
 	

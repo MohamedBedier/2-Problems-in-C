@@ -1,14 +1,13 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec1_Ass5    
- * @version : 1.00  
- * @brief   : print summation, subtraction, anding, oring, and Xoring of 2 numbers
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                  
- *                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Escape sequence character                   **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
+
 
 /* 
    import standard library built in tool chain 
@@ -16,12 +15,12 @@
    on screen or take any thing from user    
  */
 
-/* Standard input _output library */
+/*Standard input _output library */
 #include<stdio.h>
 
 
-/* this is the entry point of the program (the program start from here) 
-    Every program must have only one main function  */
+/* this is the main function (the program start from here)*/
+/* Every program must have only one main function  */
 
 int main(void)
 {

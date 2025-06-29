@@ -1,17 +1,12 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec8_Ass1    
- * @version : 1.00  
- * @brief   : Write a function called total, which totals the sum of an
- *            integer array passed to it (as the first parameter) and returns
- *            the total of all the elements as an integer. Let the second
- *            parameter to the function be an integer which contains the
- *            number of elements of the array.
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 8                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
 
 
 /* protype of function */

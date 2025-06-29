@@ -1,25 +1,28 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec9_Ass6    
- * @version : 1.00  
- * @brief   : Write a function to remove all characters in a string expect
- *            alphabets.
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
-
-/*Standard input _output library */
-
-#include<stdio.h>
-
-/* this library used to handle characters in C */
-#include<ctype.h>
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 9                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
 
 
 /* protype of functions */
  void remove_non_alphabets(char *string);
+
+
+/* 
+
+   import standard library built in tool chain 
+   to deal with operating system ====> to print 
+   on screen or take any thing from user    
+ */
+
+/*Standard input _output library */
+#include<stdio.h>
+#include<ctype.h>
 
 /* this is the main function (the program start from here) */
 /* Every program must have only one main function  */
@@ -62,7 +65,7 @@ int main(void)
         if (isalpha(string[i]))
 		{
 			/* j++ because j= 0  */
-            result[j++] = string[i]; /* j is post increament */
+            result[j++] = string[i];
         }
     }
     /* put the last element '\0' */
@@ -74,7 +77,7 @@ int main(void)
         string[i] = result[i];
     }
     
-    string[i] = '\0'; /* put the last element '\0' */
+    string[i] = '\0';
 }
 
 

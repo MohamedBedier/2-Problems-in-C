@@ -1,14 +1,12 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec9_Ass3    
- * @version : 1.00  
- * @brief   : write a C function that use the selection sorting
- *            algorithm to sort an integer array in ascending order
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 9            	                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
 
 /*Standard input _output library */
 
@@ -22,7 +20,7 @@ int main(void)
 {
 	
 	
-	int arr[6] = {3,9,2,0,4,1};
+	int arr[6] = {3,1,2,9,9,9};
     int Count_K , Count_L;
 	
 		printf("before sorting\n");
@@ -44,33 +42,27 @@ int main(void)
 void selection_sort(int arr[] , int size )
 {
 	/* define variables */
-	int Count_I ,Count_J , temp=0 , theSmallestElement ;
+	int Count_I ,Count_J , temp=0 ;
 	
 	
 	/*to get the smallest element in array to loop one element by one element	*/
 	for(Count_I = 0 ; Count_I < size -1 ; Count_I++)
 	{ 
-		
-		theSmallestElement = Count_I;
-		
-	    /* get the smallest element in the array */
+		/* to get the smallest element in array */
 		for(Count_J =Count_I + 1 ; Count_J < size ; Count_J++)
 		{
-			if (arr[Count_J] < arr[theSmallestElement])
-			{
-				/* upadate the index of the smallest element */
-				theSmallestElement = Count_J;
-			}
-		}
-			 /* check if the smallest index equal the initial state of it */
-			if( Count_I != theSmallestElement )
+			
+			if( arr[Count_I] > arr[Count_J])
 			{
 				/* swap between to number */
-				temp = arr[theSmallestElement];
-				arr[theSmallestElement] = arr[Count_I];
+				
+				temp = arr[Count_J];
+				arr[Count_J] = arr[Count_I];
 				arr[Count_I] = temp;
 				
 			}
 			
 		}
+		
+	}
 }

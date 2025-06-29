@@ -1,19 +1,12 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec5_Ass2    
- * @version : 1.00  
- * @brief   :Write a C Function that returns the addition or subtraction
- *           or multiplication or division for two numbers. The function
- *           should take the required operation and two numbers as
- *           arguments. It also should check that the input operation is one
- *           of those operation that mentioned before and if not it should
- *           return error. The function should be implemented using switch
- *           case.
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 5                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
 
 /* 
    import standard library built in tool chain 
@@ -29,7 +22,7 @@
 
 /* prototype of function */
 
-int cal_function(int CopyNum1,int CopyNum2,char CopyOperation);
+int cal_function(int num1 , int num2 ,char operation);
 
 
 /* this is the main function (the program start from here) */
@@ -37,55 +30,35 @@ int cal_function(int CopyNum1,int CopyNum2,char CopyOperation);
 
 int main()
 {
-	/* define variables to carry numbers and the result */
-	int LocaL_Num1,LocaL_Num2,Local_Result=0;
-	/* define variable to carry operations */
-	char Local_OPeration;
-	/* Ask user to enter number 1 */
-	printf("plz enter the num1 : ");
-	/* take number 1 from user */
-	scanf("%d",&LocaL_Num1);
+	int num1,num2, result;
+	char operation;
 	
-		/* Ask user to enter operation*/
-	printf("plz enter the operation : ");
+	/* Ask user to enter num1 */
+	printf("please enter num1 : ");
+	/* take num1 from user */
+	scanf("%d",&num1);
+	/* Ask user to enter num2*/
+	printf("please enter num2 : ");
+	/* take num2 from user */
+	scanf("%d",&num2);
+	/* Ask user to enter operation*/
+	printf("please enter operation : ");
 	/* take operation from user */
-	scanf(" %c",&Local_OPeration);
-	
-	/* Ask user to enter number 2 */	
-	printf("plz enter the num2 : ");
-	/* take number 2 from user */
-	scanf("%d",&LocaL_Num2);
-
-	
+	scanf(" %c",&operation);
 	/* calling function */
-	Local_Result = cal_function(LocaL_Num1,LocaL_Num2,Local_OPeration);
-	printf("The result is %d ",Local_Result);
-	
-	
-	
+	result = cal_function(num1,num2,operation);
+	printf("result is %d\n",result);
 }
 
-int cal_function(int CopyNum1,int CopyNum2,char CopyOperation)
+int cal_function(int num1 , int num2 ,char operation)
 {
-	switch(CopyOperation)
+	switch(operation)
 	{
-		case '+' :return (CopyNum1 +CopyNum2);break;
-		case '-' :return (CopyNum1 -CopyNum2);break;
-		case '*' :return (CopyNum1 *CopyNum2);break;
-		case '/' :if(CopyNum2 != 0)
-					{
-						return (CopyNum1/ CopyNum2);break;
-					}else{
-						printf("math error ! you trying to divide by zero\n");
-						return -1;
-						break;
-					}
-			default: 	printf("you enter wrong operation\n");
-			return -1;
-						break;	
-		
+		case '+' :return (num1+num2);break;
+		case '-' :return (num1-num2);break;
+		case '*' :return (num1*num2);break;
+		case '/' :return (num1/num2);break;
+		default:printf("error\n");
 	}
-	
-	
 	
 }

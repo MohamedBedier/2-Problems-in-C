@@ -1,14 +1,15 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec4_Ass2    
- * @version : 1.00  
- * @brief   : Write a program that reads a positive integer and
- *            checks if it is a perfect square number
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 4                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
+
+
+
 
 
 /* 
@@ -27,29 +28,31 @@
 int main(void)
 {
 	/* define two integers   */
-	int Local_Number ;
-	int Local_Counter;
+	int Number , i , flag = 0 ;
 	
 	/* Ask user to enter the Number */
-	printf("please,Enter a number : ");
-	
+	printf("please enter the Number : ");
 	/* take the Number from user */
-	scanf("%d",&Local_Number);
+	scanf("%d",&Number);
 	
-	for(Local_Counter = 1 ; Local_Counter <= (int)(Local_Number/2) ; Local_Counter++)
+	
+	
+	for(i = 1 ; i <= (int)(Number/2) ; i++)
 	{
 		/* 4 == 2 * 2
 		   9 == 3 * 3	
 		   25== 5 * 5	
 		   */
-		if(Local_Number == Local_Counter * Local_Counter )
+		if(Number == i * i )
 		{
-			printf("%d is perfect square ", Local_Number);
+			printf("%d is perfect square ", Number);
 			/* to end main func write return here  */
 			return 0 ;
 		}
 	}
 	
 	/* if the number not perfect the compiler will exit from the loop and print not perfect */
-	printf("%d is not perfect square ", Local_Number);
+				printf("%d is not perfect square ", Number);
+
+	
 }

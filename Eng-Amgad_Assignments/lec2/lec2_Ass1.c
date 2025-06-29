@@ -1,15 +1,12 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec2_Ass1    
- * @version : 1.00  
- * @brief   : print Ascii number of the character which 
-				entered by the user.
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                  
- *                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 1                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
 
 /* 
    import standard library built in tool chain 
@@ -17,12 +14,12 @@
    on screen or take any thing from user    
  */
 
-/* Standard input _output library */
+/*Standard input _output library */
 #include<stdio.h>
 
 
-/* this is the entry point of the program (the program start from here) 
-    Every program must have only one main function  */
+/* this is the main function (the program start from here) */
+/* Every program must have only one main function  */
 
 int main(void)
 {
@@ -38,5 +35,8 @@ int main(void)
 
 	/* to print Ascii number of the character */
 	printf("the value of this character in Ascii table is : %d",Local_Character);
+	
+	
+	
 	
 }

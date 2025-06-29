@@ -1,14 +1,12 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec4_Ass4    
- * @version : 1.00  
- * @brief   : Write a program to calculate the power of a number
- *            The number and its power are input from user.
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 4                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
 
 
 
@@ -29,7 +27,7 @@
 
 int main(void)
 {
-/* define 4 integers to carry Number , power , counter , sum  */
+/* define two integers   */
 	int Number , power , counter , sum = 1;
 	
 	/* Ask user to enter the Number */
@@ -41,10 +39,11 @@ int main(void)
 	/* take the power from user */
 	scanf("%d",&power);
 	
-	/* i use for loop for summing number by power */
+	
+
 	for(counter = 0 ; counter < power ; counter++ )
 	{
-		sum *= Number;
+		sum = sum * Number;
 	}
 	
 	printf("%d",sum);

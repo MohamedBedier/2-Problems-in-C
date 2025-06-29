@@ -1,13 +1,15 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec4_Ass5    
- * @version : 1.00  
- * @brief   : Write a program to reverse a number
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 4                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
+
+
+
 
 
 
@@ -27,19 +29,18 @@
 int main(void)
 {
 /* define  int varibles   */
-	int Number ,x , Local_NewNum=0;
+	int Number ,x ;
 	
 	/* Ask user to enter the Number */
 	printf("please enter the Number : ");
 	/* take the Number from user */
 	scanf("%d",&Number);
-	
-	/* reverse a number */
 	while(Number != 0 )
 	{
 		x = Number % 10; // 124  4>>2>>1
 		Number = Number / 10; 
-		Local_NewNum = Local_NewNum*10 + x;
+		printf("%d\t",x);
+		
 	}
-	printf("Reverse number is : %d",Local_NewNum);
+	
 }

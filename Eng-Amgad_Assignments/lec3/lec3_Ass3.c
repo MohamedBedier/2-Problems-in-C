@@ -1,16 +1,17 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec3_Ass3    
- * @version : 1.00  
- * @brief   : Write a program that reads two integers and checks
- *            if the first is multiple of the second.
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
- 
- 
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 3                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
+
+
+
+
+
 /* 
    import standard library built in tool chain 
    to deal with operating system ====> to print 
@@ -38,12 +39,14 @@ int main(void)
 	/* take the value Number2 from user */
 	scanf("%d",&Num2);
 	
-	/* checks if the first is multiple of the second.*/
 	if(Num1 % Num2 == 0) 
 	{
 		printf("the first _num1_ is multiple of the second.");
+	}else if(Num2 % Num1 == 0)
+	{
+		printf("the first _num2_ is multiple of the second .");
 	}else{
-		printf("the first _num1_ is not multiple of the second \n");
+		printf("Wrong error \n");
 	}
 	
 	

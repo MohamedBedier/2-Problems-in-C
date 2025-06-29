@@ -1,14 +1,15 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec1_Ass4    
- * @version : 1.00  
- * @brief   : calculates the area and Circumference of circle
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                  
- *                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Escape sequence character                   **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
+
+
+
 
 /* 
    import standard library built in tool chain 
@@ -16,12 +17,16 @@
    on screen or take any thing from user    
  */
 
-/* Standard input _output library */
+/*Standard input _output library */
 #include<stdio.h>
-#include<math.h>
 
-/* this is the entry point of the program (the program start from here) 
-    Every program must have only one main function  */
+/* The math.h library in C is a standard library 
+that provides various mathematical functions and constants */
+
+
+#include <math.h>
+/* this is the main function (the program start from here)*/
+/* Every program must have only one main function  */
 
 int main(void)
 {

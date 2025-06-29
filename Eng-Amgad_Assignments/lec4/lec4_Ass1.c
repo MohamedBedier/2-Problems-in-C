@@ -1,14 +1,15 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec4_Ass1    
- * @version : 1.00  
- * @brief   : Write a program that reads a positive integer and
- *            checks if it is a prime number
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 4                                **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
+
+
+
 
 /* 
    import standard library built in tool chain 
@@ -25,33 +26,25 @@
 
 int main(void)
 {
-	/* define 3 integers   */
-	int Local_Number ;
-	int Local_Counter_I;
-	int Local_Counter_J = 1;
+	/* define two integers   */
+	int Number , i , counter = 0 ;
 	
 	/* Ask user to enter the Number */
 	printf("please enter the Number : ");
 	/* take the Number from user */
-	scanf("%d",&Local_Number);
-	
-	/* loop to divid number on all previous number and itself */
-	for(Local_Counter_I = 2 ; Local_Counter_I <= Local_Number ; Local_Counter_I++)
+	scanf("%d",&Number);
+	for(i = 1 ; i <= Number ; i++)
 	{
-		/* check of only accept divided on itself or not */
-		if(Local_Number % Local_Counter_I == 0)
+		if(Number % i == 0)
 		{
-			/* update counter by 1 */
-			Local_Counter_J++;
+			counter++;
 		}
 	}
-	
-	/* check of prime or not */
-	if(Local_Counter_J == 2 )
+	if(counter == 2 )
 	{
-		printf("%d is a Prime number",Local_Number);
+		printf("%d is a Prime number",Number);
 	}else{
-		printf("%d is not a Prime number",Local_Number);
+		printf("%d is not a Prime number",Number);
 	}
 	
 	

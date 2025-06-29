@@ -1,14 +1,13 @@
-/*************************************************************
- *************************************************************
- *                                                         
- * @file    : Lec1_Ass2    
- * @version : 1.00  
- * @brief   : rint your name and your grade in a new line
- * @author  : MOHAMED BEDIER MOHAMED                                                                                                            
- *                                                  
- *                                                       
- ************************************************************
- ************************************************************/
+/*************************************************************/
+/*************************************************************/
+/**                                                         **/
+/** File Name : Assignment 2		                        **/
+/** Auther    : MOHAMED BEDIER MOHAMED                      **/
+/** Verision :  1.00                                        **/
+/**                                                         **/
+/*************************************************************/
+/*************************************************************/
+
 
 /* 
    import standard library built in tool chain 
@@ -16,12 +15,11 @@
    on screen or take any thing from user    
  */
 
-/* Standard input _output library */
+/*Standard input _output library */
 #include<stdio.h>
 
-
-/* this is the entry point of the program (the program start from here) 
-    Every program must have only one main function  */
+/* this is the main function (the program start from here)*/
+/* Every program must have only one main function  */
 
 int main(void)
 {
